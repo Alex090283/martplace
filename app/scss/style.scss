@@ -1,7 +1,7 @@
 @import 'vars';
 @import 'global';
 @import 'fonts';
-.header__inner {
+.header__inner-top {
     background-color: #eef1f3;
 }
 
@@ -29,11 +29,69 @@
 }
 
 .header__top-btn {
+    margin-top: 6px;
+    border: none;
     background-color: #0674ec;
     border-radius: 30px;
     width: 140px;
     height: 36px;
-    color: #fff;
-    font-size: 14px;
-    line-height: 28px;
+    a {
+        color: #fff;
+        font-size: 14px;
+        line-height: 28px;
+    }
 }
+
+.header__top-icons {
+    display: flex;
+    margin-right: 50px;
+    margin-left: 50px;
+    max-width: 120px;
+}
+
+.header__top-personal {
+    max-width: 172px;
+    line-height: 22px;
+    font-weight: 500;
+    margin-right: 2px;
+}
+
+.header__top-name {
+    color: #333333;
+    font-weight: 500;
+    margin-bottom: 6px;
+}
+
+.header__top-balance {
+    color: #0674ec;
+    font-size: 15px;
+}
+
+.header__inner-menu {
+    background-color: #fff;
+}
+
+.header__menu {
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header__menu-items {
+    display: flex;
+    justify-content: space-between;
+    text-transform: uppercase;
+    max-width: 495px;
+    li {
+        a {
+            color: #333;
+            font-weight: 500;
+            font-size: 15px;
+            line-height: 42px;
+            padding-top: 18px;
+            padding-right: 33px;
+        }
+    }
+}
+
+.header__search {}
