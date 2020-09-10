@@ -81,7 +81,7 @@
     display: flex;
     justify-content: space-between;
     text-transform: uppercase;
-    max-width: 495px;
+    max-width: 528px;
     li {
         a {
             color: #333;
@@ -94,4 +94,83 @@
     }
 }
 
-.header__search {}
+.header__search-form {
+    position: relative;
+    form {
+         ::placeholder {
+            color: #898f96;
+            font-size: 15px;
+        }
+        input {
+            width: 360px;
+            height: 46px;
+            margin-top: 17px;
+            border: 1px solid #d9dfe5;
+            border-radius: 20px;
+            padding: 0 80px 0 25px;
+            outline: none;
+        }
+        button {
+            position: absolute;
+            width: 70px;
+            height: 46px;
+            background-color: #0674ec;
+            border: none;
+            border-radius: 20px;
+            top: 17px;
+            right: 0;
+            cursor: pointer;
+            img {
+                padding-top: 5px;
+            }
+        }
+    }
+}
+
+.search__text-items {
+    text-align: center;
+    color: #f3f3f8;
+    .search__title {
+        font-size: 60px;
+        line-height: 70px;
+    }
+    .title-1 {
+        padding-top: 185px;
+    }
+    .title-2 {
+        font-size: 60px;
+        line-height: 70px;
+        font-weight: 700;
+        padding-top: 25px;
+    }
+    .search__text {
+        font-size: 20px;
+        font-weight: 500;
+        padding-top: 50px;
+    }
+    .search__buttons {
+        padding-top: 68px;
+        padding-bottom: 235px;
+        button {
+            width: 190px;
+            height: 55px;
+            border: 1px solid #fff;
+            border-radius: 25px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            outline: none;
+            &:focus {
+                background-color: #fff;
+                color: #0674ec;
+            }
+        }
+    }
+    .all_products {
+        margin-right: 15px;
+    }
+    .popular_products {
+        margin-left: 15px;
+    }
+}
