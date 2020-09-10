@@ -128,6 +128,7 @@
 }
 
 .search__text-items {
+    position: relative;
     text-align: center;
     color: #f3f3f8;
     .search__title {
@@ -172,5 +173,90 @@
     }
     .popular_products {
         margin-left: 15px;
+    }
+    .search__form-items {
+        position: relative;
+        height: 135px;
+        .search__form-bg1 {
+            position: relative;
+            max-width: 1080px;
+            background-color: #fff;
+            opacity: 50%;
+            border-radius: 6px;
+            height: 135px;
+            left: 30px;
+            bottom: -40px;
+            z-index: 1;
+        }
+        .search__form-bg2 {
+            position: relative;
+            max-width: 1110px;
+            background-color: #fff;
+            opacity: 50%;
+            border-radius: 6px;
+            height: 135px;
+            left: 15px;
+            bottom: 83px;
+            z-index: 2;
+        }
+        .search__form {
+            position: absolute;
+            background-color: #fff;
+            opacity: 50%;
+            border-radius: 6px;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
+            height: 135px;
+            left: 0;
+            bottom: -66px;
+            z-index: 3;
+            form {
+                width: 1140px;
+                display: flex;
+                justify-content: space-between;
+                input {
+                    position: absolute;
+                    left: 40px;
+                    top: 40px;
+                    width: 613px;
+                    height: 55px;
+                    border: 1px solid #dcdcdc;
+                    border-top-left-radius: 3px;
+                    border-bottom-left-radius: 3px;
+                    outline: none;
+                    color: #676767;
+                    padding-left: 28px;
+                    padding-right: 10px;
+                }
+                p {
+                    select {
+                        position: absolute;
+                        width: 195px;
+                        height: 55px;
+                        top: 40px;
+                        right: 292px;
+                        border: 1px solid #dcdcdc;
+                        border-top-right-radius: 3px;
+                        border-bottom-right-radius: 3px;
+                        border-left: none;
+                        cursor: pointer;
+                        outline: none;
+                        color: #555555;
+                        padding-left: 20px;
+                    }
+                }
+                button {
+                    position: absolute;
+                    width: 223px;
+                    height: 55px;
+                    top: 40px;
+                    right: 40px;
+                    background-color: #0674ec;
+                    border-radius: 3px;
+                    cursor: pointer;
+                    outline: none;
+                    color: #fff;
+                }
+            }
+        }
     }
 }
