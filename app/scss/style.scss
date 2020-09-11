@@ -204,11 +204,11 @@
             background-color: #fff;
             opacity: 50%;
             border-radius: 6px;
-            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
             height: 135px;
             left: 0;
             bottom: -66px;
             z-index: 3;
+            box-shadow: 0px 4px 20px 0px rgba(0, 0, 0, 0.08);
             form {
                 width: 1140px;
                 display: flex;
@@ -256,6 +256,81 @@
                     outline: none;
                     color: #fff;
                 }
+            }
+        }
+    }
+}
+
+.description {
+    background-color: #fff;
+    .description__inner {
+        text-align: center;
+        .description__items {
+            display: flex;
+            justify-content: space-between;
+            padding-bottom: 121px;
+            .description__item-research {
+                margin-top: 231px;
+                max-width: 360px;
+                .description__research {
+                    position: relative;
+                    .description__img-research {
+                        position: absolute;
+                        bottom: 57px;
+                        left: 125px;
+                    }
+                }
+            }
+            .description__item-research:hover {
+                border-radius: 4px;
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+                background-color: #fff;
+            }
+            .description__item-responsiv {
+                margin-top: 231px;
+                max-width: 360px;
+                .description__responsiv {
+                    position: relative;
+                    .description__img-responsiv {
+                        position: absolute;
+                        bottom: 57px;
+                        left: 125px;
+                    }
+                }
+            }
+            .description__item-responsiv:hover {
+                border-radius: 4px;
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+                background-color: #fff;
+            }
+            .description__item-buy {
+                margin-top: 231px;
+                max-width: 360px;
+                .description__buy {
+                    position: relative;
+                    .description__img-buy {
+                        position: absolute;
+                        bottom: 57px;
+                        left: 125px;
+                    }
+                }
+            }
+            .description__item-buy:hover {
+                border-radius: 4px;
+                box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+                background-color: #fff;
+            }
+            .title {
+                color: #000;
+                font-size: 24px;
+                padding-top: 156px;
+            }
+            .text {
+                padding-top: 34px;
+                padding-bottom: 49px;
+                color: $text;
+                font-size: 16px;
+                line-height: 30px;
             }
         }
     }
