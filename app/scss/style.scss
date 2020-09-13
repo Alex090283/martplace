@@ -338,6 +338,7 @@
 
 .slider__inner {
     max-height: 850px;
+    padding-bottom: 120px;
     .slider__scroll {
         height: 110px;
         margin-top: 120px;
@@ -348,27 +349,60 @@
         color: #000;
         box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
         border-radius: 4px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .slider__scroll-arrows {
+        background-color: #7347c1;
+        border-radius: 18px;
+        width: 110px;
+        height: 45px;
+        display: flex;
+        position: relative;
+        margin: -9px 30px;
+        .slick__arrow {
+            position: absolute;
+            width: 7px;
+            height: 14px;
+        }
+        .arrow-left {
+            background-image: url(../images/slider/icons/arrow-left.png);
+            top: 15px;
+            left: 27px;
+            cursor: pointer;
+        }
+        .arrow-right {
+            background-image: url(../images/slider/icons/arrow-right.png);
+            top: 15px;
+            right: 27px;
+            cursor: pointer;
+        }
     }
     .slider__slide {
         margin-top: 50px;
         .slider__slide-box {
-            display: flex;
-            justify-content: space-between;
             background-color: #fff;
             border-radius: 4px;
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+            min-height: 457px;
             img {
                 max-width: 555px;
                 border-top-left-radius: 4px;
                 border-bottom-left-radius: 4px;
-                object-fit: none;
+                position: absolute;
             }
             .slider__description {
+                position: absolute;
                 max-width: 586px;
-                padding: 51px 50px 0px;
+                padding: 0 50px;
+                top: 0;
+                right: 0;
                 .slider__description-title {
                     color: #000;
                     font-size: 24px;
-                    font-weight: 500;
+                    margin-top: 44px;
                 }
                 .slider__description-developer {
                     margin-top: 15px;
@@ -398,12 +432,13 @@
                     }
                 }
                 .slider__description-text {
-                    margin-top: 34px;
-                    padding-right: 10px;
+                    margin-top: 24px;
                     color: $text;
                 }
                 .slider__description-links {
                     margin-top: 40px;
+                    margin-left: -7px;
+                    padding-left: 0;
                     display: flex;
                     a {
                         padding-left: 7px;
@@ -424,7 +459,8 @@
                     border-top: 1px solid #ececec;
                     display: flex;
                     justify-content: space-between;
-                    padding: 24px 0;
+                    padding-top: 23px;
+                    padding-bottom: 24px;
                     .slider__price {
                         width: 100px;
                         height: 32px;
@@ -437,14 +473,15 @@
                     }
                     .slider__likes {
                         min-width: 34px;
+                        font-size: 15px;
                     }
-                    .slider__sells {
-                        min-width: 31px;
-                    }
-                    .slider__rating {
-                        width: 87px;
-                        height: 14px;
-                    }
+                }
+                .slider__sells {
+                    min-width: 31px;
+                }
+                .slider__rating {
+                    width: 87px;
+                    height: 14px;
                 }
             }
         }
