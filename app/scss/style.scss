@@ -32,7 +32,7 @@
 .header__top-btn {
     margin-top: 6px;
     border: none;
-    background-color: #0674ec;
+    background-color: $blue;
     border-radius: 30px;
     width: 140px;
     height: 36px;
@@ -64,7 +64,7 @@
 }
 
 .header__top-balance {
-    color: #0674ec;
+    color: $blue;
     font-size: 15px;
 }
 
@@ -115,7 +115,7 @@
             position: absolute;
             width: 70px;
             height: 46px;
-            background-color: #0674ec;
+            background-color: $blue;
             border: none;
             border-radius: 20px;
             top: 17px;
@@ -167,7 +167,7 @@
             outline: none;
             &:focus {
                 background-color: #fff;
-                color: #0674ec;
+                color: $blue;
             }
         }
     }
@@ -253,7 +253,7 @@
                     height: 55px;
                     top: 40px;
                     right: 40px;
-                    background-color: #0674ec;
+                    background-color: $blue;
                     border-radius: 3px;
                     cursor: pointer;
                     outline: none;
@@ -471,7 +471,7 @@
                     .slider__price {
                         width: 100px;
                         height: 32px;
-                        background-color: #0674ec;
+                        background-color: $blue;
                         border-radius: 15px;
                         text-align: center;
                         color: #fff;
@@ -551,4 +551,144 @@
         outline: none;
         cursor: pointer;
     }
+}
+
+.products__items {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.product__items-items {
+    max-width: 361px;
+    background-color: #fff;
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    border-radius: 4px;
+    margin-top: 30px;
+}
+
+.product__image-items {
+    max-height: 230px;
+    text-align: center;
+}
+
+.product__image {
+    height: 230px;
+}
+
+.product__image-btn {
+    margin-top: 93px;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding: 17px 31px;
+    border: 1px solid #f4f4f4;
+    background-color: transparent;
+    border-radius: 25px;
+    color: #fff;
+    &:hover {
+        background-color: #fff;
+        color: $blue;
+    }
+}
+
+.product__title {
+    color: #000;
+    font-weight: 500;
+    font-size: 20px;
+    padding-left: 29px;
+    padding-top: 30px;
+}
+
+.product__info {
+    display: flex;
+    justify-content: flex-start;
+    padding-top: 10px;
+}
+
+.product__info-name {
+    background-repeat: no-repeat;
+    margin-left: 29px;
+    padding-left: 35px;
+    a {
+        color: #000;
+        font-size: 15px;
+    }
+}
+
+.product__info-about {
+    margin-left: 20px;
+    padding-left: 25px;
+    background-repeat: no-repeat;
+    background-position: left;
+    font-size: 15px;
+    color: #7347c1;
+}
+
+.product__text {
+    margin-top: 32px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.product__price-items {
+    display: flex;
+    justify-content: start;
+    border-top: 1px solid #ececec;
+    margin-top: 35px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.product__price {
+    margin-left: 30px;
+    margin-right: 13px;
+    width: 60px;
+    height: 30px;
+    background-color: #e6f1fd;
+    border-radius: 14px;
+    text-align: center;
+    color: $blue;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.product__likes {
+    margin-right: 70px;
+    padding-left: 22px;
+    color: #6f7d8d;
+    font-size: 15px;
+}
+
+.product__sales {
+    margin-left: 70px;
+    padding-left: 24px;
+    color: $blue;
+    font-size: 15px;
+}
+
+.products__sort {
+    text-align: center;
+    margin-top: 60px;
+}
+
+.products__sort-btn.btn {
+    margin-bottom: 0;
+}
+
+.products__sort-btn {
+    width: 190px;
+    height: 55px;
+    background-color: $blue;
+    color: #fff;
+    border-radius: 25px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-bottom: 120px;
+}
+
+.products__sort-btn.mixitup-control-active {
+    background-color: $blue;
+    color: #fff;
 }
