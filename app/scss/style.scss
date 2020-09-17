@@ -741,3 +741,107 @@
 }
 
 // end slider feedback
+// start counter
+.counter {
+    background-color: #212225;
+}
+
+.counter__inner {
+    display: flex;
+    justify-content: space-between;
+    max-height: 350px;
+}
+
+.counter__items {
+    text-align: center;
+    &-briefcase {
+        padding-top: 190px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #feb71d;
+        padding-bottom: 20px;
+    }
+    &-text {
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding-bottom: 96px;
+    }
+}
+
+.counter__sales {
+    text-align: center;
+    &-cloud {
+        padding-top: 190px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #58c9e9;
+        padding-bottom: 20px;
+    }
+    &-text {
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding-bottom: 96px;
+    }
+}
+
+.counter__customers {
+    text-align: center;
+    &-smile {
+        padding-top: 190px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #77de51;
+        padding-bottom: 20px;
+    }
+    &-text {
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding-bottom: 96px;
+    }
+}
+
+.counter__members {
+    text-align: center;
+    &-people {
+        padding-top: 190px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+    &-number {
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 36px;
+        color: #ff6a6d;
+        padding-bottom: 20px;
+    }
+    &-text {
+        color: #fff;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        padding-bottom: 96px;
+    }
+}
+
+// end counter
