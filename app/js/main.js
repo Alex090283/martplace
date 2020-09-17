@@ -15,12 +15,12 @@ $(function() {
     $('.feedback__items').slick({
         arrows: true,
         slidesToShow: 3,
-        slidesToScroll: 3
-            // swipeToSlide: true,
-            // infinite: true,
-            // cssEase: 'linear',
-            // prevArrow: '.arrow-left',
-            // nextArrow: '.arrow-right',
+        slidesToScroll: 3,
+        // swipeToSlide: true,
+        // infinite: true,
+        // cssEase: 'linear',
+        prevArrow: '.arrow-left',
+        nextArrow: '.arrow-right',
 
     });
 
