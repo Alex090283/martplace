@@ -695,7 +695,7 @@
 
 // end products
 // start slider feedback 
-.feedback__title {
+.slider__feedback-title {
     height: 110px;
     margin-top: 120px;
     background-color: #fff;
@@ -851,20 +851,11 @@
 }
 
 .about__title {
-    padding-top: 120px;
-    color: #000;
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 25px;
-    span {
-        color: #0674ec;
-    }
+    @include title;
 }
 
 .about__text {
-    max-width: 670px;
-    text-align: center;
-    margin: 0 auto 60px;
+    @include title-text;
 }
 
 .about__items {
@@ -966,3 +957,64 @@
 }
 
 // end market
+// start feedback
+.feedback {
+    background-color: #fff;
+}
+
+.feedback__title {
+    @include title;
+}
+
+.feedback__text {
+    @include title-text;
+}
+
+.feedback__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.feedback__item {
+    position: relative;
+    box-shadow: 0px 2px 50px 0px rgba(0, 0, 0, 0.08);
+    border-radius: 4px;
+    border-bottom-left-radius: 0;
+    border-top-left-radius: 0;
+    max-width: 555px;
+    width: 100%;
+    border-left: 2px solid #0674ec;
+    &-user {
+        position: absolute;
+        top: 65px;
+        left: 138px;
+    }
+    &-specialty {
+        position: absolute;
+        top: 99px;
+        left: 138px;
+    }
+    &-text {
+        margin-top: 49px;
+        padding: 0px 40px 50px;
+    }
+}
+
+.icon-avatar {
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    top: 50px;
+    left: 40px;
+}
+
+.icon-bubble {
+    // position: absolute;
+    background-repeat: no-repeat;
+    background-position: right;
+    padding-top: 55px;
+    margin-right: 43px;
+    margin-top: 55px;
+}
+
+// end feedback
