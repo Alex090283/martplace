@@ -964,9 +964,6 @@
 
 .feedback__title {
     @include title;
-    .title {
-        margin-left: 10px;
-    }
 }
 
 .feedback__text {
@@ -1019,7 +1016,7 @@
     margin-top: 55px;
 }
 
-a {
+.feedback__link {
     border-radius: 25px;
     margin: 60px 473px 120px;
     .feedback__btn {
