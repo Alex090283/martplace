@@ -1113,3 +1113,51 @@
 }
 
 // end news
+// start promises
+.promises {
+    background-color: #fff;
+}
+
+.promises__inner {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promises__guarantee {
+    max-width: 570px;
+    width: 100%;
+    text-align: center;
+    &-icon {
+        padding-top: 121px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 62px;
+    }
+    &-text {
+        @include title;
+        margin-top: -90px;
+        margin-bottom: 55px;
+    }
+}
+
+.promises__support {
+    max-width: 570px;
+    width: 100%;
+    text-align: center;
+    &-icon {
+        padding-top: 121px;
+        background-repeat: no-repeat;
+        background-position: center;
+        margin-top: 62px;
+    }
+    &-text {
+        @include title;
+        margin-top: -90px;
+        margin-bottom: 55px;
+        .title {
+            color: #7347c1;
+        }
+    }
+}
+
+// end promises
