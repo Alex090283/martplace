@@ -372,13 +372,13 @@
             width: 7px;
             height: 14px;
         }
-        .arrow-left {
+        .left {
             background-image: url(../images/slider/icons/arrow-left.png);
             top: 15px;
             left: 27px;
             cursor: pointer;
         }
-        .arrow-right {
+        .right {
             background-image: url(../images/slider/icons/arrow-right.png);
             top: 15px;
             right: 27px;
@@ -1161,3 +1161,41 @@
 }
 
 // end promises
+// start invitation
+.invitation {
+    background-image: url(../images/invitation-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: -moz-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(64, 48, 201) 46%, rgb(114, 33, 160) 100%);
+    opacity: 0.902;
+    text-align: center;
+    &__title {
+        color: #fff;
+        font-size: 36px;
+        padding-top: 110px;
+    }
+    &__text {
+        font-size: 18px;
+        color: #e7e7e7;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    &__btn {
+        width: 190px;
+        height: 55px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        color: #0674ec;
+    }
+    a {
+        margin-bottom: 110px;
+        cursor: default;
+    }
+}
+
+// end invitation

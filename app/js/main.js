@@ -7,8 +7,8 @@ $(function() {
         infinite: true,
         fade: true,
         cssEase: 'linear',
-        prevArrow: '.arrow-left',
-        nextArrow: '.arrow-right',
+        prevArrow: '.left',
+        nextArrow: '.right',
 
     });
 
