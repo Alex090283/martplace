@@ -16,12 +16,16 @@ $(function() {
         arrows: true,
         slidesToShow: 3,
         slidesToScroll: 3,
-        // swipeToSlide: true,
-        // infinite: true,
-        // cssEase: 'linear',
         prevArrow: '.arrow-left',
         nextArrow: '.arrow-right',
 
+    });
+
+    $(".rating").rateYo({
+        rating: 4.5,
+        spacing: "3px",
+        starWidth: "14px",
+        readOnly: true,
     });
 
     var mixer = mixitup('.products__inner');

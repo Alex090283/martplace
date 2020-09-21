@@ -542,16 +542,36 @@
                         font-weight: 500;
                     }
                     .slider__likes {
-                        min-width: 34px;
+                        position: relative;
                         font-size: 15px;
+                        padding-left: 26px;
+                        &::before {
+                            content: '';
+                            position: absolute;
+                            background-image: url(../images/slider/icons/heart.png);
+                            width: 16px;
+                            height: 14px;
+                            left: 0;
+                            bottom: 10px;
+                        }
                     }
                 }
                 .slider__sells {
-                    min-width: 31px;
+                    position: relative;
+                    padding-left: 23px;
+                    color: #0674ec;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        background-image: url(../images/slider/icons/sels.png);
+                        width: 14px;
+                        height: 14px;
+                        left: 0;
+                        bottom: 10px;
+                    }
                 }
                 .slider__rating {
-                    width: 87px;
-                    height: 14px;
+                    padding-top: 5px;
                 }
             }
         }
@@ -705,7 +725,6 @@
 
 .product__price {
     margin-left: 30px;
-    margin-right: 13px;
     width: 60px;
     height: 30px;
     background-color: #e6f1fd;
@@ -717,17 +736,48 @@
 }
 
 .product__likes {
-    margin-right: 70px;
+    margin-left: 14px;
     padding-left: 22px;
     color: #6f7d8d;
     font-size: 15px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/slider/icons/heart.png);
+        width: 16px;
+        height: 14px;
+        left: 0;
+        bottom: 10px;
+    }
+}
+
+.products__rating {
+    padding-top: 7px;
+    margin-left: 15px;
+}
+
+.one,
+.two,
+.five {
+    opacity: 0;
 }
 
 .product__sales {
-    margin-left: 70px;
+    margin-left: 55px;
     padding-left: 24px;
     color: $blue;
     font-size: 15px;
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        background-image: url(../images/slider/icons/sels.png);
+        width: 14px;
+        height: 14px;
+        left: 0;
+        bottom: 10px;
+    }
 }
 
 .products__sort {
@@ -1150,7 +1200,7 @@
     text-align: center;
     &-date {
         height: 40px;
-        width: 181px;
+        width: 150px;
         padding-top: 10px;
         padding-right: 5px;
         padding-left: 23px;
@@ -1159,12 +1209,32 @@
         margin-left: 30px;
         border-right: 1px solid #ececec;
         color: #999999;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/news/icons/clock.png);
+            width: 16px;
+            height: 15px;
+            left: 0;
+            bottom: 7px;
+        }
     }
     &-comments {
         color: #7e7e7e;
         margin-top: 20px;
         width: 39px;
         padding-left: 23px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/news/icons/bubble.png);
+            width: 16px;
+            height: 14px;
+            left: 0;
+            bottom: 15px;
+        }
     }
     &-visits {
         color: #7e7e7e;
@@ -1172,6 +1242,16 @@
         width: 47px;
         padding-left: 23px;
         margin-right: 30px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/news/icons/eye.png);
+            width: 17px;
+            height: 9px;
+            left: 0;
+            bottom: 17px;
+        }
     }
 }
 
@@ -1189,7 +1269,7 @@
 .promises__guarantee {
     max-width: 570px;
     width: 100%;
-    text-align: center;
+    border-right: 1px solid #e8eaf3;
     &-icon {
         padding-top: 121px;
         background-repeat: no-repeat;
@@ -1197,7 +1277,14 @@
         margin-top: 62px;
     }
     &-text {
-        @include title;
+        padding-top: 120px;
+        color: #000;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
+        span {
+            color: #0674ec;
+        }
         margin-top: -90px;
         margin-bottom: 55px;
     }
@@ -1214,7 +1301,11 @@
         margin-top: 62px;
     }
     &-text {
-        @include title;
+        padding-top: 120px;
+        color: #000;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 25px;
         margin-top: -90px;
         margin-bottom: 55px;
         .title {
@@ -1284,18 +1375,40 @@
     }
     &-phone {
         margin-top: 16px;
+        position: relative;
+        padding-left: 29px;
         a {
             color: #ababab;
             font-size: 15px;
             line-height: 28px;
         }
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/footer/phone-handset.png);
+            width: 17px;
+            height: 17px;
+            left: 0;
+            bottom: 9px;
+        }
     }
     &-email {
         margin-top: 2px;
+        position: relative;
+        padding-left: 29px;
         a {
             color: #ababab;
             font-size: 15px;
             line-height: 28px;
+        }
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/footer/envelope.png);
+            width: 17px;
+            height: 11px;
+            left: 0;
+            bottom: 9px;
         }
     }
     address {
@@ -1304,6 +1417,17 @@
         color: #ababab;
         font-size: 15px;
         line-height: 28px;
+        padding-left: 29px;
+        position: relative;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../images/footer/map-marker.png);
+            width: 10px;
+            height: 17px;
+            left: 3px;
+            bottom: 19px;
+        }
     }
 }
 
