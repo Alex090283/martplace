@@ -187,6 +187,7 @@
             border-radius: 20px;
             top: 17px;
             right: 0;
+            outline: none;
             cursor: pointer;
             img {
                 padding-top: 5px;
@@ -662,6 +663,12 @@
 
 .product__image {
     height: 230px;
+    // a {
+    //     display: none;
+    //     &:hover {
+    //         display: inline-block;
+    //     }
+    // }
 }
 
 .product__image-btn {
@@ -676,6 +683,7 @@
     &:hover {
         background-color: #fff;
         color: $blue;
+        transition: all 0.7s;
     }
 }
 
