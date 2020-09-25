@@ -8,6 +8,11 @@ html {
     box-sizing: inherit;
 }
 
+html,
+body {
+    height: 100%;
+}
+
 a {
     display: inline-block;
     text-decoration: none;
@@ -34,8 +39,24 @@ span.title {
     margin-left: 10px;
 }
 
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.content {
+    flex: 1 0 auto;
+}
+
+.footer {
+    flex: 0 0 auto;
+}
+
 .container {
     max-width: 1170px;
     margin: 0 auto;
     padding: 0px 15px;
 }
+
+.breadcrumbs {}

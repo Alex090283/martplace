@@ -1562,3 +1562,29 @@
 }
 
 // end footer
+// Category page CSS
+// search category start
+.search__category {
+    &-inner {
+        text-align: center;
+    }
+    &-text {
+        padding-top: 85px;
+        color: #f3f3f8;
+        font-size: 26px;
+    }
+    form {
+        margin-top: 30px;
+    }
+    input {
+        width: 555px;
+        height: 55px;
+        border-radius: 25px;
+        border: none;
+        outline: none;
+        padding: 0 130px 0 30px;
+        position: relative;
+    }
+}
+
+// search category end
