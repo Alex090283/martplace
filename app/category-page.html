@@ -107,8 +107,8 @@
                     <div class="search__category-text">
                         4,572 wordpress themes, made with love
                     </div>
-                    <form class="search__category-input">
-                        <input type="text" placeholder="Search your products">
+                    <form>
+                        <input class="search__category-input" type="text" placeholder="Search your products">
                         <button class="search__category-btn">Search</button>
                     </form>
                     <div class="breadcrumbs">
@@ -119,7 +119,7 @@
                                         <a href="#">Home</a>
                                     </li>
                                     <li>
-                                        <a href="#">Category Page Grid</a>
+                                        <span>Category Page Grid</span>
                                     </li>
                                 </ul>
                             </div>
@@ -129,6 +129,646 @@
                 </div>
             </section>
 
+            <!-- search end -->
+            <!-- popular products search start -->
+
+            <section class="popular-search">
+                <div class="container">
+                    <div class="popular-search__inner">
+                        <div class="popular-search__selector">
+                            <div class="selector__new">
+                                <a href="#">New Products</a>
+                            </div>
+                            <div class="selector__popular">
+                                <a href="#">Popular Products</a>
+                            </div>
+                            <div class="selector__price">
+                                <p>
+                                    Price :
+                                    <select required="required">                                        
+                                        <option value="1">Low to High</option>
+                                        <option value="2">High to Low</option>                                        
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="selector__items">
+                                <p>
+                                    <select required="required">
+                                        <option value="">12 Items Per Page</option>
+                                        <option value="1">24 Items Per Page</option>
+                                        <option value="2">36 Items Per Page</option>                                        
+                                    </select>
+                                </p>
+                            </div>
+                            <div class="selector__icons">
+                                <div class="selector__icons-grid active" style="background-image: url(images/search/grid.svg);"></div>
+                                <div class="selector__icons-list" style="background-image: url(images/search/list.svg);"></div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- popular products search end -->
+            <!-- product-page start -->
+
+            <section class="product-page">
+                <div class="container">
+                    <div class="product-page__inner">
+
+                        <div class="product-page__aside">
+                            <div class="category__aside-items">
+                                <div class="aside__title">
+                                    Categories
+                                </div>
+                                <ul class="category__list">
+                                    <li>
+                                        <a href="#"><span>Wordpress</span>35</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Landing Page</span>45</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Psd Template</span>13</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Plugins</span>08</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>HTML Template</span>34</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Components</span>78</a>
+                                    </li>
+                                    <li>
+                                        <a href="#"><span>Joomla Template</span>26</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="filter__aside-items">
+                                <div class="filter__aside-title">
+                                    Filter Products
+                                </div>
+                                <ul class="product__aside-list">
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-1" name="item-1" value="Trending Products">
+                                        <label for="item-1">Trending Products</label>
+                                    </li>
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-2" name="item-2" value="Popular Products">
+                                        <label for="item-2">Popular Products</label>
+                                    </li>
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-3" name="item-3" value="New Products">
+                                        <label for="item-3">New Products</label>
+                                    </li>
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-4" name="item-4" value="Best Seller">
+                                        <label for="item-4">Best Seller</label>
+                                    </li>
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-5" name="item-5" value="Best Rating">
+                                        <label for="item-5">Best Rating</label>
+                                    </li>
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-6" name="item-6" value="Low Price">
+                                        <label for="item-6">Low Price</label>
+                                    </li>
+                                    <li>
+                                        <input class="checkboc" type="checkbox" id="item-7" name="item-7" value="High Price">
+                                        <label for="item-7">High Price</label>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="pricing-range__aside-items range">
+                                <div class="price-range__aside-title">
+                                    Pricing Range
+                                </div>
+                                <div class="range-slider">
+                                    <input class="js-range-slider" type="text" name="my_range" value="" />
+                                    <button class="range-btn" type="submit">Search Update</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="product-page__items">
+
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="product-page__items-item">
+                                <img class="item__photo" src="images/products/photo.jpg" alt="">
+                                <div class="product__item-title">
+                                    <a href="#">Finance and Consulting Business Theme</a>
+                                    <p class="product__item-text">
+                                        Nunc placerat mi id nisi inter dum mollis. Praesent phare...
+                                    </p>
+                                </div>
+
+                                <div class="product__item-info">
+                                    <img src="images/products/icons/avatar.png" alt="">
+                                    <a href="#">Artcorner</a>
+                                </div>
+                                <p class="likes">
+                                    90 loves
+                                </p>
+                                <p class="comments">
+                                    90 Comments
+                                </p>
+                                <div class="product__item-sale">
+                                    <div class="products__rating rating three"></div>
+
+                                    <div class="product__sales sales">
+                                        427
+                                    </div>
+                                </div>
+                                <div class="border"></div>
+
+                                <div class="product__item-price">
+                                    <a class="product__price price" href="#">
+                                    $18
+                                    </a>
+                                    <a href="#">
+                                        <div class="product__info-about" style="background-image: url(images/products/icons/plugin.png)">
+                                            Wordpress
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+                    <div class="pagination">
+                        <button class="list__prev"></button>
+                        <ul class="pagination__list">
+                            <li class="active">
+                                <a href="#">1</a>
+                            </li>
+                            <li>
+                                <a href="#">2</a>
+                            </li>
+                            <li>
+                                <a href="#">...</a>
+                            </li>
+                            <li>
+                                <a href="#">8</a>
+                            </li>
+                        </ul>
+                        <button class="list__next active"></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- product-page end -->
+            <!-- invitation start -->
+
+            <section class="invitation">
+                <div class="container">
+                    <div class="invitation__title">
+                        Ready to Join Our Marketplace!
+                    </div>
+                    <div class="invitation__text">
+                        Over 25,000 designers and developers trust the MartPlace.
+                    </div>
+                    <a href="#">
+                        <button class="invitation__btn">
+                        Join Us Today
+                    </button>
+                    </a>
+                </div>
+            </section>
+
+            <!-- invitation end -->
 
 
 
