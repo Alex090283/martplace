@@ -3001,13 +3001,19 @@
 // product-page end
 // product start
 .product {
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
     &__items {
         margin-top: 69px;
     }
     &__item {
         max-width: 750px;
         width: 100%;
-        background-color: #fff;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        border-radius: 4px;
         &-buttons {
             display: flex;
             justify-content: space-around;
@@ -3015,16 +3021,6 @@
             background-color: #fefefe;
             border-bottom: 1px solid #e8e8e8;
             margin: 0px 30px;
-            .buttons__btn {
-                width: 190px;
-                height: 50px;
-                border: none;
-                border-radius: 25px;
-                outline: none;
-                cursor: pointer;
-                font-weight: 500;
-                font-size: 15px;
-            }
             .btn-preview {
                 margin-left: 140px;
                 background-color: $blue;
@@ -3043,6 +3039,214 @@
                 position: absolute;
                 left: 22px;
                 bottom: 18px;
+            }
+        }
+        .buttons__btn {
+            width: 190px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 15px;
+        }
+        &-social {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 0px 91px;
+            height: 120px;
+            .btn-share {
+                padding-left: 33px;
+                background-color: rgb(255, 255, 255);
+                box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+                color: #000;
+                position: relative;
+                &::before {
+                    content: '';
+                    background-image: url(../images/products/icons/share-icon.png);
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    width: 20px;
+                    height: 21px;
+                    position: absolute;
+                    left: 24px;
+                    top: 15px;
+                }
+            }
+        }
+    }
+    &__details {
+        max-width: 750px;
+        width: 100%;
+        margin-top: 28px;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        &-menu {
+            ul {
+                display: flex;
+                justify-content: flex-start;
+            }
+        }
+    }
+    &__menu-list {
+        border-right: 1px solid #e8e8e8;
+        border-bottom: 1px solid #e8e8e8;
+        color: #000;
+        font-size: 17px;
+        padding: 20px 27px;
+        cursor: pointer;
+        &:last-child {
+            border-right: none;
+            width: 190px;
+        }
+        &.active {
+            color: $blue;
+            border-bottom: none;
+        }
+    }
+}
+
+.details {
+    &__content {
+        padding: 70px 30px 80px;
+        display: none;
+        &.active {
+            display: block;
+        }
+        .content {
+            &__text {
+                margin-bottom: 70px;
+                p {
+                    margin: 0 auto;
+                    padding-right: 20px;
+                }
+                &-title {
+                    margin-bottom: 40px;
+                }
+            }
+            &__unordered {
+                margin-bottom: 70px;
+                ul {
+                    display: block;
+                    padding-left: 20px;
+                    li {
+                        list-style-image: url(../images/products/icons/check-mark.png);
+                    }
+                }
+            }
+            &__ordered {
+                margin-bottom: 70px;
+                ul {
+                    display: block;
+                    padding-left: 20px;
+                    li {
+                        list-style-type: decimal;
+                        color: #000;
+                        font-weight: 500;
+                        font-size: 16px;
+                        span {
+                            color: $text;
+                            font-weight: 400;
+                        }
+                    }
+                }
+            }
+            &__image {
+                img {
+                    max-width: 690px;
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.content-title {
+    color: #000;
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.price-text {
+    display: none;
+    &.active {
+        display: block;
+    }
+}
+
+.constituents {
+    margin-top: 70px;
+    &__options {
+        max-width: 360px;
+        width: 100%;
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        &-price {
+            background-color: $blue;
+            border-top-left-radius: 4px;
+            border-top-right-radius: 4px;
+            padding: 40px 0;
+            color: #fff;
+            font-size: 36px;
+            font-weight: 500;
+            text-align: center;
+            position: relative;
+            span {
+                font-size: 18px;
+                position: absolute;
+                top: 35px;
+                left: 125px;
+            }
+        }
+        .license__user-single,
+        .license__user-multi {
+            padding: 30px 30px 0 30px;
+        }
+        .license-radio {
+            margin-right: 18px;
+        }
+        .price-title {
+            color: #333;
+            font-size: 18px;
+            font-weight: 500;
+        }
+        .price-text {
+            padding-left: 37px;
+            padding-bottom: 30px;
+            border-bottom: 1px solid #ececec;
+        }
+        .price-btn {
+            width: 300px;
+            height: 55px;
+            border: none;
+            border-radius: 25px;
+            outline: none;
+            margin-left: 30px;
+            font-size: 16px;
+            color: #fff;
+            font-weight: 500;
+            cursor: pointer;
+        }
+        .purchase {
+            margin-top: 32px;
+            margin-bottom: 30px;
+            background-color: $blue;
+        }
+        .add-cart {
+            margin-bottom: 40px;
+            background-color: #7347c1;
+            padding-left: 32px;
+            position: relative;
+            .lnr-cart {
+                font-size: 16px;
+                font-weight: 400;
+                position: absolute;
+                left: 90px;
+                top: 20px;
             }
         }
     }
