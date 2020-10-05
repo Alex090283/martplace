@@ -488,26 +488,22 @@
             <!-- header end -->
             <!-- search start -->
 
-            <section class="search__category">
-                <div class="search__category-inner" style="background-image: url(images/search/search-category-bg.jpg);">
-                    <div class="search__category-text">
-                        4,572 wordpress themes, made with love
-                    </div>
-                    <form>
-                        <input class="search__category-input" type="text" placeholder="Search your products">
-                        <button class="search__category-btn">Search</button>
-                    </form>
+            <section class="search__category description__page">
+                <div class="search__category-inner description__page-inner" style="background-image: url(images/search/search-category-bg.jpg);">
                     <div class="breadcrumbs">
                         <div class="container">
-                            <div class="breadcrumbs__inner">
-                                <ul class="breadcrumbs__list">
+                            <div class="breadcrumbs__inner description__page-breadcrumbs">
+                                <ul class="description__favorite breadcrumbs__list description__page-list">
                                     <li>
                                         <a href="#">Home</a>
                                     </li>
                                     <li>
-                                        <span>Category Page Grid</span>
+                                        <span>Favorites</span>
                                     </li>
                                 </ul>
+                            </div>
+                            <div class="search__category-text description__page-text">
+                                Your Favourites
                             </div>
                         </div>
                     </div>
@@ -516,48 +512,45 @@
             </section>
 
             <!-- search end -->
-            <!-- popular products search start -->
+            <!-- favorite filter start-->
 
-            <section class="popular-search">
+            <section class="favorite-filter">
                 <div class="container">
-                    <div class="popular-search__inner">
-                        <div class="popular-search__selector">
-                            <div class="selector__new">
-                                <a href="#">New Products</a>
-                            </div>
-                            <div class="selector__popular">
-                                <a href="#">Popular Products</a>
-                            </div>
-                            <div class="selector__price">
-                                <p>
-                                    Price :
-                                    <select required="required">                                        
-                                        <option value="1">Low to High</option>
-                                        <option value="2">High to Low</option>                                        
-                                    </select>
-                                </p>
-                            </div>
-                            <div class="selector__items">
-                                <p>
-                                    <select required="required">
-                                        <option value="">12 Items Per Page</option>
-                                        <option value="1">24 Items Per Page</option>
-                                        <option value="2">36 Items Per Page</option>                                        
-                                    </select>
-                                </p>
-                            </div>
-                            <div class="selector__icons">
-                                <div class="selector__icons-grid active" style="background-image: url(images/search/grid.svg);"></div>
-                                <div class="selector__icons-list" style="background-image: url(images/search/list.svg);"></div>
-                            </div>
-
+                    <div class="favorite-filter__inner">
+                        <div class="favorite-filter-text">
+                            <span>570</span> Favourites Found
+                        </div>
+                        <div class="favorite-filter__selector">
+                            Filter By<span class="lnr lnr-chevron-down"></span>
+                        </div>
+                        <div class="favorite-selector__price">
+                            <p>
+                                Price :
+                                <select required="required">                                        
+                                    <option value="1">Low to High</option>
+                                    <option value="2">High to Low</option>                                        
+                                </select>
+                            </p>
+                        </div>
+                        <div class="favorite-selector__items">
+                            <p>
+                                <select required="required">
+                                    <option value="">12 Items Per Page</option>
+                                    <option value="1">24 Items Per Page</option>
+                                    <option value="2">36 Items Per Page</option>                                        
+                                </select>
+                            </p>
+                        </div>
+                        <div class="selector__icons">
+                            <div class="selector__icons-grid active" style="background-image: url(images/search/grid.svg);"></div>
+                            <div class="selector__icons-list" style="background-image: url(images/search/list.svg);"></div>
                         </div>
                     </div>
                 </div>
             </section>
 
 
-            <!-- popular products search end -->
+            <!-- favorite filter end -->
             <!-- favorites start -->
 
             <section class="product-page favorites">
