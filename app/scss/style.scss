@@ -3561,3 +3561,82 @@
 }
 
 // favorites end
+// login start
+.login {
+    display: flex;
+    justify-content: center;
+    &__inner {
+        border-radius: 4px;
+        background-color: rgb(255, 255, 255);
+        box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+        max-width: 555px;
+        width: 100%;
+        text-align: center;
+        margin: 70px 0px 120px;
+    }
+    &__title {
+        padding: 50px 0px 27px;
+        border-bottom: 1px solid #e8ebf0;
+        &-title {
+            color: #000;
+            font-size: 26px;
+        }
+        &-text {
+            margin-bottom: 0;
+        }
+    }
+    &__form {
+        text-align: left;
+        &-login,
+        &-pass {
+            color: #000;
+            font-weight: 500;
+            margin-left: 50px;
+            margin-top: 29px;
+            input {
+                border: none;
+                background-color: #f4f5f8;
+                color: #898f96;
+                width: 455px;
+                height: 50px;
+                padding: 0px 20px;
+                outline: none;
+            }
+        }
+        &-checkbox {
+            margin-left: 50px;
+            margin-top: 30px;
+            input {
+                margin-right: 15px;
+            }
+        }
+        &-btn {
+            margin-top: 30px;
+            margin-left: 50px;
+            width: 190px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: $blue;
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+            outline: none;
+            cursor: pointer;
+        }
+        &-help {
+            display: flex;
+            justify-content: space-between;
+            margin: 40px 50px 55px;
+            .help__remember,
+            .help__account {
+                color: #898f96;
+                a {
+                    color: $blue;
+                }
+            }
+        }
+    }
+}
+
+// login end
