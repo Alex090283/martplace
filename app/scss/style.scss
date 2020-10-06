@@ -3651,3 +3651,19 @@
 }
 
 // register end
+// recover password start
+.register {
+    .recover__title {
+        padding-bottom: 0;
+    }
+    .recover__title-text {
+        text-align: left;
+        padding: 2px 47px 30px;
+        margin-top: 0;
+    }
+    .recover__form-btn {
+        margin-bottom: 60px;
+    }
+}
+
+// recover password end
