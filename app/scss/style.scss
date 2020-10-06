@@ -3667,3 +3667,158 @@
 }
 
 // recover password end
+// how it works start
+.works__inner {
+    text-align: center;
+    background-image: -moz-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+    background-image: -webkit-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+    background-image: -ms-linear-gradient( 180deg, rgb(13, 62, 242) 0%, rgb(45, 47, 199) 46%, rgb(76, 31, 156) 100%);
+    opacity: 0.902;
+    .works-text {
+        padding-top: 89px;
+        padding-bottom: 55px;
+        color: #f3f3f8;
+        font-weight: 500;
+        span {
+            display: block;
+            margin-top: 16px;
+            font-weight: 300;
+        }
+    }
+    .works-list {
+        padding-bottom: 30px;
+        padding-top: 0;
+    }
+}
+
+// how it works end
+// create start
+.create {
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__img {
+        max-width: 473px;
+        width: 100%;
+        margin: 100px 0;
+    }
+    &__description {
+        max-width: 473px;
+        width: 100%;
+        margin-top: 130px;
+        margin-left: 225px;
+        &-title {
+            color: #000;
+            font-size: 30px;
+        }
+        &-text {
+            margin-top: 45px;
+            margin-bottom: 0;
+        }
+        &-btn {
+            width: 170px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: $blue;
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            outline: none;
+            margin-top: 30px;
+            a {
+                color: #fff;
+            }
+        }
+    }
+}
+
+// create end
+// upload start
+.upload {
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__img {
+        max-width: 473px;
+        width: 100%;
+        margin: 100px 0;
+        margin-left: 174px;
+    }
+    &__description {
+        max-width: 473px;
+        width: 100%;
+        margin-top: 130px;
+        margin-left: 20px;
+        &-title {
+            color: #000;
+            font-size: 30px;
+        }
+        &-text {
+            margin-top: 45px;
+            margin-bottom: 0;
+            margin-right: 25px;
+        }
+        &-btn {
+            width: 170px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            outline: none;
+            margin-top: 30px;
+            a {
+                color: $blue;
+            }
+        }
+    }
+}
+
+// upload end
+// start start
+.start {
+    background-color: #fff;
+    &__inner {
+        display: flex;
+        justify-content: flex-start;
+    }
+    &__img {
+        max-width: 473px;
+        width: 100%;
+        margin: 100px 0;
+    }
+    &__description {
+        max-width: 473px;
+        width: 100%;
+        margin-top: 130px;
+        margin-left: 225px;
+        &-title {
+            color: #000;
+            font-size: 30px;
+        }
+        &-text {
+            margin-top: 45px;
+            margin-bottom: 0;
+        }
+        &-btn {
+            width: 170px;
+            height: 50px;
+            border: none;
+            border-radius: 25px;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            outline: none;
+            margin-top: 30px;
+            a {
+                color: $blue;
+            }
+        }
+    }
+}
+
+// start end
