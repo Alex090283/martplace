@@ -623,6 +623,9 @@
     display: flex;
     justify-content: space-between;
     position: relative;
+    &-btn {
+        display: none;
+    }
     .header__menu-menu {
         .home__list {
             width: 270px;
@@ -3948,3 +3951,5 @@
 }
 
 // pricing plan end
+// adaptiv media
+@import 'media';
