@@ -3822,3 +3822,129 @@
 }
 
 // start end
+// pricing plan start
+.pricing-plan__inner {
+    margin-bottom: 120px;
+}
+
+.pricing-plan__text {
+    margin-top: 120px;
+    margin-left: 235px;
+    text-align: center;
+    max-width: 685px;
+    width: 100%;
+    &-title {
+        color: #000;
+        font-size: 36px;
+        span {
+            color: $blue;
+        }
+    }
+    &-text {
+        margin-top: 28px;
+    }
+}
+
+.pricing-plan__items {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+
+.pricing-plan__item {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    max-width: 360px;
+    width: 100%;
+    border-top: 3px solid #ff6a6c;
+    &-title {
+        text-align: center;
+        padding: 20px 0;
+        margin: 0px 30px;
+        border-bottom: 1px solid #e8ebf0;
+        color: #000;
+        font-size: 24px;
+        font-weight: 500;
+    }
+    &-price {
+        color: #000;
+        font-size: 36px;
+        text-align: center;
+        margin-top: 29px;
+        display: flex;
+        justify-content: center;
+        .span-before {
+            font-size: 18px;
+            display: block;
+            margin-top: -5px;
+        }
+        .span-after {
+            color: $text;
+            font-size: 16px;
+            display: block;
+            margin-top: 6px;
+        }
+    }
+    &-list {
+        margin-top: 36px;
+        li {
+            margin-left: 52px;
+            position: relative;
+            &::before {
+                content: '';
+                position: absolute;
+                background-image: url(../images/over_png/dot-li.png);
+                background-repeat: no-repeat;
+                background-position: center;
+                left: -22px;
+                bottom: 11px;
+                width: 7px;
+                height: 7px;
+            }
+            span {
+                color: #000;
+                font-weight: 500;
+            }
+            .lnr-question-circle {
+                margin-left: 12px;
+                color: $text;
+                font-size: 18px;
+            }
+        }
+    }
+    &-btn {
+        margin: 30px;
+        border-radius: 4px;
+        background-color: rgb(255, 106, 108);
+        box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+        outline: none;
+        cursor: pointer;
+        border: none;
+        width: 300px;
+        height: 50px;
+        a {
+            color: #fff;
+            font-size: 18px;
+            font-weight: 500;
+        }
+    }
+}
+
+.item-2 {
+    border-top: 3px solid $blue;
+}
+
+.item-3 {
+    border-top: 3px solid #feb71d;
+}
+
+.btn-2 {
+    background-color: $blue;
+}
+
+.btn-3 {
+    background-color: #feb71d;
+}
+
+// pricing plan end
