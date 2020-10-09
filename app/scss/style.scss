@@ -3959,5 +3959,37 @@
 }
 
 // pricing plan end
+// 404 start
+.page__404 {
+    &-inner {
+        text-align: center;
+    }
+    &-image {
+        margin-top: 83px;
+    }
+    &-text {
+        color: #000;
+        font-size: 30px;
+        margin-top: 40px;
+    }
+    &-btn {
+        margin-top: 40px;
+        margin-bottom: 100px;
+        width: 190px;
+        height: 50px;
+        border: none;
+        border-radius: 25px;
+        outline: none;
+        cursor: pointer;
+        background-color: $blue;
+        a {
+            color: #fff;
+            font-size: 15px;
+            font-weight: 500;
+        }
+    }
+}
+
+// 404 end
 // adaptiv media
 @import 'media';
