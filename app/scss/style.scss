@@ -4150,5 +4150,31 @@
 }
 
 // contact end
+// terms start
+.terms__inner {
+    margin-top: 60px;
+    margin-bottom: 120px;
+}
+
+.terms__items {
+    border-radius: 4px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+    padding-bottom: 80px;
+}
+
+.terms__item {
+    &-title {
+        color: #000;
+        font-size: 24px;
+        padding: 40px 40px 30px 30px;
+        border-bottom: 1px solid #e8ebf0;
+    }
+    &-text {
+        padding: 30px 40px 20px 30px;
+    }
+}
+
+// terms end
 // adaptiv media
 @import 'media';
