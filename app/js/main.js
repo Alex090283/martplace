@@ -110,6 +110,18 @@ $(function() {
 
     });
 
+    $('.latest').on('click', function() {
+        $('.popular').removeClass('active');
+        $('.latest').addClass('active');
+
+    });
+
+    $('.popular').on('click', function() {
+        $('.latest').removeClass('active');
+        $('.popular').addClass('active');
+
+    });
+
     $('.header__menu-btn').on('click', function() {
         $('.header__menu-items').slideToggle()
     });
