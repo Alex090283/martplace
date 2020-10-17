@@ -1,0 +1,19 @@
+$text: #555555;
+$bg: #eff1f5;
+$blue: #0674ec;
+@mixin title {
+    padding-top: 120px;
+    color: #000;
+    font-size: 36px;
+    text-align: center;
+    margin-bottom: 25px;
+    span {
+        color: #0674ec;
+    }
+}
+
+@mixin title-text {
+    max-width: 670px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
