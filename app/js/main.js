@@ -32,6 +32,21 @@ $(function() {
         slidesToScroll: 3,
         prevArrow: '.arrow-left',
         nextArrow: '.arrow-right',
+        responsive: [{
+                breakpoint: 1161,
+                settings: {
+                    slidesToShow: 2,
+
+                }
+            },
+            {
+                breakpoint: 781,
+                settings: {
+                    slidesToShow: 1,
+                }
+            },
+        ]
+
 
     });
 
